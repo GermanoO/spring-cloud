@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: 'loja'
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaulZone: http://localhost:8761/eureka
+
+loja:
+  ribbon:
+    listOfServers: localhost:8080
+
